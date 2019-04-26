@@ -1,0 +1,50 @@
+.header{
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-action{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__button{
+    border: 0;
+    padding: .5rem 2rem;
+    background: #08A045;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+    &:hover{
+      background: #7CB518;
+    }
+  }
+
+  &__help{
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: #555;
+  }
+}
+
+.header-scoreboard{
+
+  &__row{
+    display: flex;
+    justify-content: space-between;
+
+    &+&{
+      margin-top: 1rem;
+    }
+  }
+
+  &__label{
+
+  }
+
+  &__data{
+    margin-left: 2rem;
+  }
+}
